@@ -24,3 +24,14 @@ function clock()
 	else document.getElementById("doc_time").innerHTML = date_time;
 	 setTimeout("clock()", 1000);
 }
+
+function clock_not_date() 
+{
+	window.onload = function(){
+    (function(){
+        var date = new Date();
+        var time = date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
+        document.getElementsByTagName('div')[0].innerHTML = time;
+        window.setTimeout(arguments.callee, 1000);
+    })();
+};
