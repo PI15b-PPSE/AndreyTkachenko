@@ -1,24 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Programmer Alarm Clock",
-  "version": "1.0",
-  
-  "content_scripts": [
-    {
-      "matches": [ "*://*/*" ],
-      "js": [ "js/content.js" ]
-    }
-  ],
-  "background": {
-    "scripts": ["js/background.js"]
-  },
-  "permissions": [
-    "http://pac.su/*"
-  ],
+ "version": "1.0",
+ 
+  "permissions": ["storage"],
 
-      "chrome_url_overrides":
-    {
-        "newtab": "html/popup.html"
-    },
+        "browser_action": {
+        "default_title": "Programmer Alarm Clock",
+        "default_icon": "res/alarm.png",
+        "default_popup": "html/popup.html"
+    }
 	
 }

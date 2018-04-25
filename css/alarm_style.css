@@ -1,14 +1,14 @@
 body{
 	text-align: center;
   font-family: sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 
-h1{
+h3{
   color: #396;
-  font-weight: 100;
-  font-size: 40px;
-  margin: 40px 0px 20px;
+  font-weight: 200;
+  font-size: 18px;
+  margin: 20px 150px 10px;
 }
 
 #clockdiv{
