@@ -1,11 +1,19 @@
 <!doctype html>
 <html>
+<meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
 	<head>
 		<meta charset="UTF-8" />
 		<title>Будильник программиста</title>
-	    <script src="js/jquery.js" type="text/javascript"></script>
+		<script src='http://code.jquery.com/jquery-latest.js'></script>
+	    <script src='../js/popup.js'></script>
+	
 	</head>
 	<body>
-		<p><script src="js/time.js"></script></p>
+			<script type='text/javascript'>
+			$(function ()
+			{
+			    alarma();
+			});
+		</script>
 	</body>
 <html>
