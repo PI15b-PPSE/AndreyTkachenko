@@ -6,21 +6,9 @@
 		<title>Будильник программиста</title>
 		<link rel="stylesheet" href="../css/alarm_style.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<script src='http://code.jquery.com/jquery-latest.js'></script>
-	    <script src='../js/time.js'></script>
-		<script src='../js/alarm.js'></script>
-	
+		<script src='../js/jquery.js'></script>
 	</head>
 	<body>
-			
-			<script type='text/javascript'>
-				$(function ()
-				{
-					clock();
-				});
-			</script>
-			<h1 id="doc_time"></h1>
-			
 			<h3>Осталось времени на выполнение задачи</h3>
 			<div id="clockdiv">
 			  <div>
@@ -46,22 +34,22 @@
 			<div class="centerer">
 				<div class="wrap">
 					<p>Задача №1</p>
-					<p><textarea name="task_1" cols="40" rows="3"></textarea></p>
-					<a class="btn-10" href="#">Зелёный</a>
-					<a class="btn-11" href="#">Жёлтый</a>
-					<a class="btn-12" href="#">Красный</a>
+					<p><textarea name="task_1" cols="40" rows="3" id="task_1"></textarea></p>
+					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
+					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
+					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
 					
 					<p>Задача №2</p>
-					<p><textarea name="task_2" cols="40" rows="3"></textarea></p>
-					<a class="btn-10" href="#">Зелёный</a>
-					<a class="btn-11" href="#">Жёлтый</a>
-					<a class="btn-12" href="#">Красный</a>
+					<p><textarea name="task_2" cols="40" rows="3" id="task_2"></textarea></p>
+					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
+					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
+					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
 					
 					<p>Задача №3</p>
-					<p><textarea name="task_3" cols="40" rows="3"></textarea></p>
-					<a class="btn-10" href="#">Зелёный</a>
-					<a class="btn-11" href="#">Жёлтый</a>
-					<a class="btn-12" href="#">Красный</a>
+					<p><textarea name="task_3" cols="40" rows="3" id="task_3"></textarea></p>
+					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
+					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
+					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
 				</div>
 			</div>
 	</body>
