@@ -1,17 +1,7 @@
-function easy_func()
-{
-	window.onload = function()
-	{
-		document.getElementById('task_1').style.background-color = 'green';
-	}
-}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("task1").addEventListener("click", handler);
+});
 
-function middle_func()
-{
-	document.getElementById("task_2").style.background-color = 'yellow';
-}
-
-function hard_func()
-{
-	document.getElementById("task_3").style.background-color = 'red';
+function handler() {
+  document.getElementById('task_1').style.backgroundColor = 'green';
 }

@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
-<meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
 	<head>
 		<meta charset="UTF-8" />
 		<title>Будильник программиста</title>
 		<link rel="stylesheet" href="../css/alarm_style.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src='../js/jquery.js'></script>
+		<script src='../js/difficult.js'></script>
 	</head>
 	<body>
 			<h3>Осталось времени на выполнение задачи</h3>
@@ -31,26 +31,24 @@
 			<script  src="../js/alarm.js"></script>
 			
 			<h1>Ваши задачи</h1>
-			<div class="centerer">
-				<div class="wrap">
-					<p>Задача №1</p>
-					<p><textarea name="task_1" cols="40" rows="3" id="task_1"></textarea></p>
-					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
-					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
-					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
-					
-					<p>Задача №2</p>
-					<p><textarea name="task_2" cols="40" rows="3" id="task_2"></textarea></p>
-					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
-					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
-					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
-					
-					<p>Задача №3</p>
-					<p><textarea name="task_3" cols="40" rows="3" id="task_3"></textarea></p>
-					<a class="btn-10" href="#" onClick="easy_func">Легко</a>
-					<a class="btn-11" href="#" onClick="middle_func">Нормально</a>
-					<a class="btn-12" href="#" onClick="hard_func">Зашквар</a>
-				</div>
+			<div class="wrap">
+				<p>Задача №1</p>
+				<p><textarea name="task_1" cols="40" rows="3" id="task_1" style="backgroundColor: red"></textarea></p>
+				<a class="btn-10" href="#" id="task1">Легко</a>
+				<a class="btn-11" href="#" onClick="middle_func();">Нормально</a>
+				<a class="btn-12" href="#" onClick="hard_func();">Зашквар</a>
+				
+				<p>Задача №2</p>
+				<p><textarea name="task_2" cols="40" rows="3" id="task_2"></textarea></p>
+				<a class="btn-10" href="#" onClick="easy_func();">Легко</a>
+				<a class="btn-11" href="#" onClick="middle_func();">Нормально</a>
+				<a class="btn-12" href="#" onClick="hard_func();">Зашквар</a>
+				
+				<p>Задача №3</p>
+				<p><textarea name="task_3" cols="40" rows="3" id="task_3"></textarea></p>
+				<a class="btn-10" href="#" onClick="easy_func();">Легко</a>
+				<a class="btn-11" href="#" onClick="middle_func();">Нормально</a>
+				<a class="btn-12" href="#" onClick="hard_func();">Зашквар</a>
 			</div>
 	</body>
 <html>
