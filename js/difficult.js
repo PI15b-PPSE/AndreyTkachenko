@@ -1,7 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("task1").addEventListener("click", handler);
+$(document).ready(function(){
+    $('a').click(function(e){
+        e.preventDefault();
+		document.getElementById($(this).data('arg1')).style.backgroundColor = $(this).data('arg2');;
+	});
 });
-
-function handler() {
-  document.getElementById('task_1').style.backgroundColor = 'green';
-}

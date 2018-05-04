@@ -18,6 +18,15 @@ html *:after {
   z-index: -1;
 }
 
+textarea {
+	position: relative;
+	display:inline-block;
+}
+
+input {
+	position: relative;
+	display:inline-block;
+}
 
 a {
   text-decoration: none;
@@ -228,31 +237,4 @@ a {
 #wrapper {
     margin: 0 auto;
 	width: 1000px;
-}
-
-
-
-/* Footer */
-
-#footer {
-	width:1000px;
-	height: 100px;
-	margin: 0 auto;
-	padding: 14px 0px 0px 0px;
-	color: #999;
-}
-
-#footer p {
-	margin: 0;
-	text-align: center;
-	font-size: 11px;
-}
-
-#footer a {
-	text-decoration: underline;
-	color: #808080;
-}
-
-#footer a:hover {
-	text-decoration: none;
 }
