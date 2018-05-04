@@ -1,14 +1,20 @@
 {
-  "manifest_version": 2,
-  "name": "Programmer Alarm Clock",
- "version": "1.0",
- 
-  "permissions": ["storage"],
-
-        "browser_action": {
-        "default_title": "Programmer Alarm Clock",
-        "default_icon": "res/alarm.png",
-        "default_popup": "html/popup.html"
-    }
+	"manifest_version": 2,
+	"name": "Programmer Alarm Clock",
+	"version": "1.0",
 	
+	"permissions": ["storage"],
+	"content_scripts": 
+	[
+		{
+			"matches": ["http://www.google.com/*"],
+			"js": ["js/difficult.js"]
+		}
+	],
+	"browser_action": 
+	{
+		"default_title": "Programmer Alarm Clock",
+		"default_icon": "res/alarm.png",
+		"default_popup": "html/popup.html"
+	}	
 }

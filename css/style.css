@@ -2,7 +2,7 @@
 html {
   font-family: 'Open Sans', Helvetica, arial, sans-serif;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #DCDCDC;
 }
 html *,
 html *:before,
@@ -18,6 +18,15 @@ html *:after {
   z-index: -1;
 }
 
+textarea {
+	position: relative;
+	display:inline-block;
+}
+
+input {
+	position: relative;
+	display:inline-block;
+}
 
 a {
   text-decoration: none;
@@ -25,20 +34,14 @@ a {
   color: black;
 }
 
-.centerer {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .wrap {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
 [class^="btn-"] {
   position: relative;
-  display: block;
+  display: inline-block;
   margin: 20px auto;
   width: 100%;
   height: 80px;
@@ -112,7 +115,7 @@ a {
 
 .btn-10 {
   position: relative;
-  color: #00ff00;
+  color: #32CD32;
 }
 .btn-10:before, .btn-10:after {
   position: absolute;
@@ -149,7 +152,7 @@ a {
 
 .btn-11 {
   position: relative;
-  color: #ffff00;
+  color: #FFD700;
 }
 .btn-11:before, .btn-11:after {
   position: absolute;
@@ -186,7 +189,7 @@ a {
 
 .btn-12 {
   position: relative;
-  color: #ff0000;
+  color: #8B0000;
 }
 .btn-12:before, .btn-12:after {
   position: absolute;
@@ -234,35 +237,4 @@ a {
 #wrapper {
     margin: 0 auto;
 	width: 1000px;
-}
-
-/*контент центральный блок*/
-.content{
-    margin: 30px auto;
-
-}
-
-/* Footer */
-
-#footer {
-	width:1000px;
-	height: 100px;
-	margin: 0 auto;
-	padding: 14px 0px 0px 0px;
-	color: #999;
-}
-
-#footer p {
-	margin: 0;
-	text-align: center;
-	font-size: 11px;
-}
-
-#footer a {
-	text-decoration: underline;
-	color: #808080;
-}
-
-#footer a:hover {
-	text-decoration: none;
 }

@@ -11,7 +11,7 @@ h3{
   margin: 20px 150px 10px;
 }
 
-#clockdiv{
+#clockdiv_1{
 	font-family: sans-serif;
 	color: #fff;
 	display: inline-block;
@@ -20,14 +20,60 @@ h3{
 	font-size: 30px;
 }
 
-#clockdiv > div{
+#clockdiv_1 > div{
 	padding: 10px;
 	border-radius: 3px;
 	background: #00BF96;
 	display: inline-block;
 }
 
-#clockdiv div > span{
+#clockdiv_1 div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+#clockdiv_2{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv_2 > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv_2 div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+#clockdiv_3{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv_3 > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv_3 div > span{
 	padding: 15px;
 	border-radius: 3px;
 	background: #00816A;

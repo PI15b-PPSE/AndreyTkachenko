@@ -17,21 +17,10 @@ function clock()
 
 	date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
 	" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
-	if (document.layers) {
+	if (document.layers) {				
 	 document.layers.doc_time.document.write(date_time);
 	 document.layers.doc_time.document.close();
 	}
 	else document.getElementById("doc_time").innerHTML = date_time;
 	 setTimeout("clock()", 1000);
 }
-
-function clock_not_date() 
-{
-	window.onload = function(){
-    (function(){
-        var date = new Date();
-        var time = date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
-        document.getElementsByTagName('div')[0].innerHTML = time;
-        window.setTimeout(arguments.callee, 1000);
-    })();
-};
