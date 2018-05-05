@@ -113,6 +113,43 @@ a {
   }
 }
 
+.btn-9 {
+  position: relative;
+  color: #000000;
+}
+.btn-9:before, .btn-9:after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #C0C0C0;
+  border-radius: 50%;
+}
+.btn-9:before {
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*     animation: criss-cross-left 0.8s reverse; */
+}
+.btn-9:after {
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  /*     animation: criss-cross-right 0.8s reverse; */
+}
+.btn-9:hover:before, .btn-9:hover:after {
+  /*       @include size($btn-width); */
+}
+.btn-9:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+          animation: criss-cross-left 0.8s both;
+}
+.btn-9:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+          animation: criss-cross-right 0.8s both;
+}
+
 .btn-10 {
   position: relative;
   color: #32CD32;

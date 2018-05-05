@@ -38,5 +38,5 @@ function initializeClock(id, endtime) {
 }
 
 var deadline="January 01 2018 00:00:00 GMT+0300";
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
+var deadline = new Date(Date.parse(new Date()) + 1 * 1 * 1 * 10 * 1000); // for endless timer
 initializeClock('clockdiv_1', deadline);
