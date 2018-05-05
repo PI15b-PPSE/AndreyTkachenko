@@ -21,6 +21,7 @@ html *:after {
 textarea {
 	position: relative;
 	display:inline-block;
+	resize: none;
 }
 
 input {
