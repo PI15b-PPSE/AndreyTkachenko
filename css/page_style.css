@@ -1,0 +1,31 @@
+html
+{
+	background-color: #DCDCDC;
+}
+
+div
+{
+	width: 50%;
+	margin: 0 auto;
+}
+
+h3
+{
+	text-align: justify;
+	color: #fff;
+	background-color: #00816A;
+	margin: 0 auto;
+	font-size: 16px;
+	width: 800px;
+	text-indent: 1.5em;
+}
+
+h2
+{
+	text-align: center;
+}
+
+h1
+{
+	text-align: center;
+}
