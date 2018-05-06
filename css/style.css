@@ -21,10 +21,7 @@ html *:after {
 textarea {
 	position: relative;
 	display:inline-block;
-<<<<<<< HEAD
-=======
 	resize: none;
->>>>>>> lab3.2
 }
 
 input {
