@@ -35,6 +35,12 @@ a {
   color: black;
 }
 
+a-a {
+  text-decoration: none;
+  line-height: 80px;
+  color: black;
+}
+
 .wrap {
   width: 100%;
   float: left;
@@ -43,7 +49,7 @@ a {
 [class^="btn-"] {
   position: relative;
   display: inline-block;
-  margin: 20px auto;
+  margin: 0.2%;
   width: 100%;
   height: 80px;
   max-width: 250px;
@@ -258,6 +264,43 @@ a {
           animation: criss-cross-left 0.8s both;
 }
 .btn-12:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+          animation: criss-cross-right 0.8s both;
+}
+
+.btn-13 {
+  position: relative;
+  color: #000000;
+}
+.btn-13:before, .btn-13:after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #006400;
+  border-radius: 50%;
+}
+.btn-13:before {
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*     animation: criss-cross-left 0.8s reverse; */
+}
+.btn-13:after {
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  /*     animation: criss-cross-right 0.8s reverse; */
+}
+.btn-13:hover:before, .btn-13:hover:after {
+  /*       @include size($btn-width); */
+}
+.btn-13:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+          animation: criss-cross-left 0.8s both;
+}
+.btn-13:hover:after {
   -webkit-animation: criss-cross-right 0.8s both;
           animation: criss-cross-right 0.8s both;
 }
