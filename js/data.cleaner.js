@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function dataCleaner_1() {
-  var data_saver_1 = {};
-		data_saver_1["text"] = "";
-		data_saver_1["time"] = "";
-		data_saver_1["color"] = "";
-		chrome.storage.local.set(data_saver_1);
+  var data_saver = {};
+		data_saver["text_1"] = "";
+		data_saver["time_1"] = "";
+		data_saver["color_1"] = "";
+		chrome.storage.local.set(data_saver);
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function dataCleaner_2() {
-  var data_saver_1 = {};
-		data_saver_1["text"] = "";
-		data_saver_1["time"] = "";
-		data_saver_1["color"] = "";
-		chrome.storage.local.set(data_saver_1);
+  var data_saver = {};
+		data_saver["text_2"] = "";
+		data_saver["time_2"] = "";
+		data_saver["color_2"] = "";
+		chrome.storage.local.set(data_saver);
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function dataCleaner_3() {
-  var data_saver_1 = {};
-		data_saver_1["text"] = "";
-		data_saver_1["time"] = "";
-		data_saver_1["color"] = "";
-		chrome.storage.local.set(data_saver_1);
+  var data_saver = {};
+		data_saver["text_3"] = "";
+		data_saver["time_3"] = "";
+		data_saver["color_3"] = "";
+		chrome.storage.local.set(data_saver);
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
