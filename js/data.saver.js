@@ -19,6 +19,7 @@ function saveData_1()
 		data_saver["time_1"] = dt;
 		data_saver["color_1"] = cr;
 		chrome.storage.local.set(data_saver);
+		window.location.reload();
 	}
 }
 
@@ -43,6 +44,7 @@ function saveData_2()
 		data_saver["time_2"] = dt;
 		data_saver["color_2"] = cr;
 		chrome.storage.local.set(data_saver);
+		window.location.reload();
 	}
 }
 
@@ -67,5 +69,6 @@ function saveData_3()
 		data_saver["time_3"] = dt;
 		data_saver["color_3"] = cr;
 		chrome.storage.local.set(data_saver);
+		window.location.reload();
 	}
 }

@@ -13,6 +13,7 @@ function dataCleaner_1()
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
+	window.location.reload();
 }
 
 document.addEventListener('DOMContentLoaded', function() 
@@ -30,6 +31,7 @@ function dataCleaner_2()
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
+	window.location.reload();
 }
 
 document.addEventListener('DOMContentLoaded', function() 
@@ -47,4 +49,5 @@ function dataCleaner_3()
 	document.getElementById($(this).data('text_area')).value = "";
 	document.getElementById($(this).data('date_time')).value = "";
 	document.getElementById($(this).data('text_area')).style.backgroundColor = "";
+	window.location.reload();
 }

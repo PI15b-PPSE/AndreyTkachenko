@@ -2890,8 +2890,7 @@ $(document).ready(function(){
         e.preventDefault();
 			$($(this).data('time')).datetimepicker(
 		{
-			format:'d.m.Y H:i',
-			step:15,
+			format:'Y.m.d H:i',
 			lang:'ru',
 		});
 	});
