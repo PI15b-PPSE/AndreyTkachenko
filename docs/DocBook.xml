@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/styles.css"?>
+<book xml:id="simple_book" xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <info><title>Документация к проекту "Programer Alarm Clock"</title>
+    <author><personname><firstname>Андрей</firstname>
+        <surname>Ткаченко</surname></personname></author>
+    <copyright><year>2018</year><holder>Андрей Ткаченко</holder></copyright></info>
+    <preface><title>Преамбула</title><address>krendelek1509999@gmail.com</address></preface>
+    <chapter xml:id="chapter_1">
+        <title>Описание продукта</title>
+        <para>Данное ПО выполнено в виде расширения для браузера Google Chrome.</para>
+		<para>Расширение даёт возможность записывать нужные вам задачии и выставлять сложность и срок их завершения.</para>
+		<para>В расширение встроены обучающие упражнения для глаз.</para>
+		<para>Данные упражнения помогут вам снимать давление с глаз и не ухудшать ваше зрение, а наоборот улучшать его.</para>
+		<para>В расширении вам доступно место для записи трёх задач.</para>
+		<para>По истечению времени для каждой задачи, будет воспроизводится звуковое и текстовое уведомление, что не даст вам не заметить дедлайн</para>
+    </chapter>
+    <chapter xml:id="chapter_2">
+        <title>Управление</title>
+        <para>Выбор сложности осуществляется нажатием одной из 3 кнопок ("Легко", "Нормально", "Сложно").</para>
+        <para>Текст задачи вписывается в текстовое поле.</para>
+        <para>Дедлайн устанавливается с помощью встроенного в текстовое поле календаря.</para>
+        <para>Кнопка "Очистить" - очищает все данные выбранной задачи и останавливает таймер.</para>
+        <para>Кнопка "Сохранить" - сохраняет данные выбранной задачи и запускает отсчёт времени.</para>
+    </chapter>
+    <chapter xml:id="chapter_3">
+        <title>Сценарии использования приложения</title>
+        <para>Расширение предоставляет различные сценарии использования.</para>
+        <section>
+            <title>Штатный сценарий</title>
+        <para>Сценарий для которого и разрабатывалось ПО, отсчёт времени и оповещение об этом пользователя</para>
+            <example><title>Выполенение задачи</title>
+                <programlisting>
+				<![CDATA[ 
+				javascript
+                    tl = new Date(tl);
+			var timer = new CountdownTimer('CDT_1',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Время вышло!</span></span>'
+			+ '<audio autoplay><source src="../res/sound/alarm.mp3" type="audio/mpeg" /></audio>');
+			timer.countDown();
+			]]>
+            </programlisting>
+			</example>
+            <title>Слежение за ребёнком</title>
+            <para>Часто бывает, что ребёнок слишком много играет и никак не хочет следить за временем, не беда,
+			выставьте в задаче напоминание о том, когда ему хватит играть и звук кряканья утки уведомит вас о том, что пора ребёнку освободить компьютер.</para>
+            <example><title>Ребёнок много играет.</title>
+                <programlisting>
+                    <![CDATA[ 
+        javascript
+		$(document).ready(function(){
+		$('input').click(function(e){
+			e.preventDefault();
+				$($(this).data('time')).datetimepicker(
+			{
+				format:'Y.m.d H:i',
+				lang:'ru',
+			});
+			});
+		});
+        }]]>
+            </programlisting>
+			</example>
+            <title>Разминка глаз</title>
+            <para>Ещё чаще бывает, что вы много работаете и глаза устают, вам лень искать разминку для глаз и вы просто сидите дальше.</para>
+			<para>Но теперь не надо ничего искать, всё под рукой, переходите в раздел разминки глаз и всё, ваше зрение вам благодарно.</para>
+            <example><title>Глаза тоже устают</title>
+                <programlisting>
+                    <![CDATA[ 
+        javascript
+			<title>Разминка глаз</title>
+			<link rel="stylesheet" href="../css/page_style.css">
+			</head>
+			<body>
+			<h1>Разминка глаз не отходя от рабочего места</h1>
+        }]]>
+            </programlisting>
+			</example>
+    </section>
+    </chapter>
+</book>
