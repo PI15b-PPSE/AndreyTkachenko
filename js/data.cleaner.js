@@ -1,7 +1,19 @@
+/**
+* Слушатель для очистки задачи №1
+* Работает с элементом clear_task_1
+* Вызывает функцию dataCleaner_1
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("clear_task_1").addEventListener("click", dataCleaner_1);
 });
+
+/**
+* Функция вызываемая слушателем для элемента clear_task_1
+* Производит очистку данных, присваивает пустое значение указанным элементам
+* Работа с содержимым/значением элементов task_1, date_time_1
+*/
 
 function dataCleaner_1() 
 {
@@ -16,10 +28,22 @@ function dataCleaner_1()
 	window.location.reload();
 }
 
+/**
+* Слушатель для очистки задачи №2
+* Работает с элементом clear_task_2
+* Вызывает функцию dataCleaner_2
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("clear_task_2").addEventListener("click", dataCleaner_2);
 });
+
+/**
+* Функция вызываемая слушателем для элемента clear_task_2
+* Производит очистку данных, присваивает пустое значение указанным элементам
+* Работа с содержимым/значением элементов task_2, date_time_2
+*/
 
 function dataCleaner_2() 
 {
@@ -34,10 +58,22 @@ function dataCleaner_2()
 	window.location.reload();
 }
 
+/**
+* Слушатель для очистки задачи №3
+* Работает с элементом clear_task_3
+* Вызывает функцию dataCleaner_3
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("clear_task_3").addEventListener("click", dataCleaner_3);
 });
+
+/**
+* Функция вызываемая слушателем для элемента clear_task_3
+* Производит очистку данных, присваивает пустое значение указанным элементам
+* Работа с содержимым/значением элементов task_3, date_time_3
+*/
 
 function dataCleaner_3() 
 {

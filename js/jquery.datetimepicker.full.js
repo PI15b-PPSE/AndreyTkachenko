@@ -2885,6 +2885,12 @@ var datetimepickerFactory = function ($) {
 
 }));
 
+/**
+* Слушатель для элемента input
+* Вызывает календарь для выбора даты и времени
+* Работа с элементами date_time_1, date_time_2, date_time_3
+*/
+
 $(document).ready(function(){
     $('input').click(function(e){
         e.preventDefault();
@@ -2892,7 +2898,6 @@ $(document).ready(function(){
 		{
 			format:'Y.m.d H:i',
 			lang:'ru',
-			step:1,
 		});
 	});
 });

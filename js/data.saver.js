@@ -1,7 +1,20 @@
+/**
+* Слушатель для сохранения задачи №1
+* Работает с элементом save_task_1
+* Вызывает функцию saveData_1
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("save_task_1").addEventListener("click", saveData_1);
 });
+
+/**
+* Функция вызываемая слушателем для элемента save_task_1
+* Проверяет заполненость вводимых данных
+* если данных достаточно, производит сохранение
+* Работа с содержимым/значением элементов task_1, date_time_1
+*/
 
 function saveData_1() 
 {
@@ -23,10 +36,23 @@ function saveData_1()
 	}
 }
 
+/**
+* Слушатель для сохранения задачи №2
+* Работает с элементом save_task_2
+* Вызывает функцию saveData_2
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("save_task_2").addEventListener("click", saveData_2);
 });
+
+/**
+* Функция вызываемая слушателем для элемента save_task_2
+* Проверяет заполненость вводимых данных
+* если данных достаточно, производит сохранение
+* Работа с содержимым/значением элементов task_2, date_time_2
+*/
 
 function saveData_2() 
 {
@@ -48,10 +74,23 @@ function saveData_2()
 	}
 }
 
+/**
+* Слушатель для сохранения задачи №3
+* Работает с элементом save_task_3
+* Вызывает функцию saveData_3
+*/
+
 document.addEventListener('DOMContentLoaded', function() 
 {
   document.getElementById("save_task_3").addEventListener("click", saveData_3);
 });
+
+/**
+* Функция вызываемая слушателем для элемента save_task_3
+* Проверяет заполненость вводимых данных
+* если данных достаточно, производит сохранение
+* Работа с содержимым/значением элементов task_3, date_time_3
+*/
 
 function saveData_3() 
 {
