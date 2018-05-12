@@ -2652,10 +2652,10 @@ var datetimepickerFactory = function ($) {
 ;(function (factory) {
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD. Register as an anonymous module.
-		define(['jquery', 'jquery-mousewheel'], factory);
+		define(['1/programmer_alarm_clock/js/jquery', 'jquery-mousewheel'], factory);
 	} else if (typeof exports === 'object') {
 		// Node/CommonJS style for Browserify
-		module.exports = factory(require('jquery'));;
+		module.exports = factory(require('1/programmer_alarm_clock/js/jquery'));;
 	} else {
 		// Browser globals
 		factory(jQuery);
@@ -2674,7 +2674,7 @@ var datetimepickerFactory = function ($) {
 (function (factory) {
     if ( typeof define === 'function' && define.amd ) {
         // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
+        define(['1/programmer_alarm_clock/js/jquery'], factory);
     } else if (typeof exports === 'object') {
         // Node/CommonJS style for Browserify
         module.exports = factory;
@@ -2892,6 +2892,7 @@ $(document).ready(function(){
 		{
 			format:'Y.m.d H:i',
 			lang:'ru',
+			step:1,
 		});
 	});
 });

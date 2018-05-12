@@ -31,11 +31,24 @@ function CDT()
 {
 	var data_saver = ["time_2"]; 
 	chrome.storage.local.get(data_saver, function(b) 
-	{ 
+	{
 		var tl = b["time_2"];
-		tl = new Date(tl);
-		var timer = new CountdownTimer('CDT_2',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Время вышло!</span></span>');
-		timer.countDown();
+		if(tl == "")
+		{
+			this.elem = document.getElementById("CDT_2");
+			var val = "";
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Дней</div><span class="number day">' + "00" + '</span></span>';
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Часов</div><span class="number hour">' + "00" + '</span></span>';
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Минут</div><span class="number min">' + "00" + '</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">Секунд</div><span class="number sec">' + "00" + '</span></span>';
+			this.elem.innerHTML = val;
+		}
+		else
+		{
+			tl = new Date(tl);
+			var timer = new CountdownTimer('CDT_2',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Время вышло!</span></span>'
+			+ '<audio autoplay><source src="../res/sound/alarm.mp3" type="audio/mpeg" /></audio>');
+			timer.countDown();
+		}
 	});
 }
 

@@ -15,27 +15,44 @@ CountdownTimer.prototype={
   var sec=Math.floor(((this.tl-today)%(24*60*60*1000))/1000)%60%60;
   var me=this;
 
-  if( ( this.tl - today ) > 0 ){
+  if( ( this.tl - today ) > 0 )
+  {
    timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">Дней</div><span class="number day">'+day+'</span></span>';
    timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">Часов</div><span class="number hour">'+hour+'</span></span>';
    timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">Минут</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">Секунд</div><span class="number sec">'+this.addZero(sec)+'</span></span>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );
-  }else{
-   this.elem.innerHTML = this.mes;
-   return;
+  }
+  else
+  {
+	this.elem.innerHTML = this.mes;
+	return;
   }
  },addZero:function(num){ return ('0'+num).slice(-2); }
 }
+
 function CDT()
 {
 	var data_saver = ["time_1"]; 
 	chrome.storage.local.get(data_saver, function(b) 
-	{ 
+	{
 		var tl = b["time_1"];
-		tl = new Date(tl);
-		var timer = new CountdownTimer('CDT_1',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Время вышло!</span></span>');
-		timer.countDown();
+		if(tl == "")
+		{
+			this.elem = document.getElementById("CDT_1");
+			var val = "";
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Дней</div><span class="number day">' + "00" + '</span></span>';
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Часов</div><span class="number hour">' + "00" + '</span></span>';
+			val += '<span class="number-wrapper"><div class="line"></div><div class="caption">Минут</div><span class="number min">' + "00" + '</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">Секунд</div><span class="number sec">' + "00" + '</span></span>';
+			this.elem.innerHTML = val;
+		}
+		else
+		{
+			tl = new Date(tl);
+			var timer = new CountdownTimer('CDT_1',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Время вышло!</span></span>'
+			+ '<audio autoplay><source src="../res/sound/alarm.mp3" type="audio/mpeg" /></audio>');
+			timer.countDown();
+		}
 	});
 }
 
